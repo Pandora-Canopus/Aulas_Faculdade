@@ -10,11 +10,11 @@ public class Veiculo {
 	private Marca marca;
 	
 		public void calcIpva() {
-			if(marca.equals("BYD"))
+			if(marca.getNome().equals("BYD"))
 				ipva = valor*2/100;
-			else if(marca.equals("HONDA"))
+			else if(marca.getNome().equals("HONDA"))
 				ipva = valor*3/100;
-			else if(marca.equals("TOYOTA"))
+			else if(marca.getNome().equals("TOYOTA"))
 				ipva = valor*4/100;
 			else
 				ipva = valor*5/100;
